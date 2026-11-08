@@ -2,9 +2,12 @@
 
 Reference library for Agent Skills.
 
-> **Note:** This library is intended for demonstration purposes only. It is not meant to be used in production.
+> [!IMPORTANT]
+> This library is intended for demonstration purposes only. It is not meant to be used in production.
 
 ## Installation
+
+### macOS / Linux
 
 Using pip:
 
@@ -21,7 +24,32 @@ uv sync
 source .venv/bin/activate
 ```
 
-After installation, the `skills-ref` executable will be available on your `$PATH` (within the activated virtual environment).
+### Windows
+
+Using pip (PowerShell):
+
+```powershell
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+pip install -e .
+```
+
+Using pip (Command Prompt):
+
+```cmd
+python -m venv .venv
+.venv\Scripts\activate.bat
+pip install -e .
+```
+
+Or using [uv](https://docs.astral.sh/uv/):
+
+```powershell
+uv sync
+.venv\Scripts\Activate.ps1
+```
+
+After installation, the `skills-ref` executable will be available on your `PATH` (within the activated virtual environment).
 
 ## Usage
 
